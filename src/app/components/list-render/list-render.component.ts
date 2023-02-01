@@ -23,8 +23,14 @@ export class ListRenderComponent {
   }
 
   removeDog(dog: Dog): void {
-    console.log('Removendo cachorro...');
-    this.dogs = this.listService.remove(this.dogs, dog);
+    // Lógica de remoção de item do db.json(API local)
+    // this.dogs = this.listService.remove(this.dogs, dog);
+
+    // Excluir no back
+    this.listService.removeItem(dog.id).subscribe();
+
+    // Excluir na view
+    this.dogs = this.dogs.filter((d) => d.name !== dog.name );
   }
 
   getDogs(): void {
