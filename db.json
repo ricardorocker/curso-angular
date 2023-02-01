@@ -1,26 +1,31 @@
 {
   "dogs": [
     {
+      "id": 1,
       "name": "Belinha",
       "type": "Puddle",
       "age": 4
     },
     {
+      "id": 2,
       "name": "Bolt",
       "type": "Husky",
       "age": 10
     },
     {
+      "id": 3,
       "name": "Zóio",
       "type": "Chiwawa",
       "age": 5
     },
     {
+      "id": 4,
       "name": "Ainstein",
       "type": "Border Coller",
       "age": 2
     },
     {
+      "id": 5,
       "name": "Thor",
       "type": "Pasto Alemão",
       "age": 9
