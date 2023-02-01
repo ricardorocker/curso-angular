@@ -15,4 +15,11 @@ export class FirstComponentComponent {
     brand: 'Nissan'
   }
 
+  // Dados para componente filho
+  userName = 'Petrucia';
+  userData = {
+    email: 'petrucia.rocker@gmail.com',
+    role: 'Admin'
+  }
+
 }

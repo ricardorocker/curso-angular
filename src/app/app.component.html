@@ -1,14 +1,14 @@
+<p>header</p>
+<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/directives">Directives</a>
+  <a routerLink="/ng-if">ngIf</a>
+  <a routerLink="/events">Events</a>
+  <a routerLink="/output">@Output</a>
+  <a routerLink="/ng-for">Lista(ngFor)</a>
+  <a routerLink="/pipes">Pipes</a>
+  <a routerLink="/two-way-binding">Two Way Data Binding</a>
+</nav>
 <h1>Hello World!</h1>
-<p>Paragrafo em app.component</p>
-<div>
-  <a href="#">Clique Aqui</a>
-</div>
-<app-first-component></app-first-component>
-<app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
-<app-directives></app-directives>
-<app-if-render></app-if-render>
-<app-events></app-events>
-<app-emitter></app-emitter>
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+<router-outlet></router-outlet>
+<p>footer</p>
