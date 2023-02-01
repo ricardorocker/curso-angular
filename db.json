@@ -1,0 +1,29 @@
+{
+  "dogs": [
+    {
+      "name": "Belinha",
+      "type": "Puddle",
+      "age": 4
+    },
+    {
+      "name": "Bolt",
+      "type": "Husky",
+      "age": 10
+    },
+    {
+      "name": "Zóio",
+      "type": "Chiwawa",
+      "age": 5
+    },
+    {
+      "name": "Ainstein",
+      "type": "Border Coller",
+      "age": 2
+    },
+    {
+      "name": "Thor",
+      "type": "Pasto Alemão",
+      "age": 9
+    }
+  ]
+}
