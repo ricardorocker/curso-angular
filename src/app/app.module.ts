@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app.routing.module';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -30,7 +31,8 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
