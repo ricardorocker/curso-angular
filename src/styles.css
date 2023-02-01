@@ -12,6 +12,11 @@ body {
   padding-bottom: 500px;
 }
 
+button {
+  padding: 4px;
+  margin: 2px;
+}
+
 .class {
   border-bottom: 1px solid red;
   padding: 2em;

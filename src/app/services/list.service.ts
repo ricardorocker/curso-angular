@@ -12,8 +12,13 @@ export class ListService {
 
   constructor(private http: HttpClient) { }
 
-  remove(dogs: Dog[], dog: Dog) {
-    return dogs.filter((d) => dog.name !== d.name);
+  // Método para remover do db.json(API local)
+  // remove(dogs: Dog[], dog: Dog) {
+  //   return dogs.filter((d) => dog.name !== d.name);
+  // }
+
+  removeItem(id: number) {
+    return this.http.delete<Dog>(`${this.apiUrl}/${id}`);
   }
 
   getAll(): Observable<Dog[]> {
