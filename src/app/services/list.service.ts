@@ -19,4 +19,8 @@ export class ListService {
   getAll(): Observable<Dog[]> {
     return this.http.get<Dog[]>(this.apiUrl);
   }
+
+  getItem(id: number): Observable<Dog> {
+    return this.http.get<Dog>(`${this.apiUrl}/${id}`);
+  }
 }

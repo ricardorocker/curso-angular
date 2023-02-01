@@ -1,7 +1,7 @@
-
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { EventsComponent } from './components/events/events.component';
@@ -18,7 +18,8 @@ const routes: Routes = [
   { path: 'ng-if', component: IfRenderComponent },
   { path: 'events', component: EventsComponent },
   { path: 'output', component: EmitterComponent },
-  { path: 'ng-for', component: ListRenderComponent },
+  { path: 'list', component: ListRenderComponent },
+  { path: 'list/:id', component: ItemDetailComponent },
   { path: 'pipes', component: PipesComponent },
   { path: 'two-way-binding', component: TwoWayBindingComponent },
 ]
