@@ -1,10 +1,25 @@
 <div class="class">
 
   <form #formulario="ngForm">
+
     <label>
       Nome:
       <input type="text" name="nome" ngModel />
     </label>
+
+    <label>
+      Masculino:
+      <input type="radio" name="sexo" value="Masculino" ngModel />
+    </label>
+    <label>
+      Feminino:
+      <input type="radio" name="sexo" value="Feminino" ngModel />
+    </label>
+    <label>
+      Outros:
+      <input type="radio" name="sexo" value="Outros" ngModel />
+    </label>
+
   </form>
 
   {{ formulario.value | json }}
