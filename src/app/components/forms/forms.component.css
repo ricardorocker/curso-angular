@@ -10,3 +10,11 @@ form {
 .aula {
   padding: 10px;
 }
+
+input {
+  padding: 2px;
+}
+
+select {
+  padding: 10px;
+}

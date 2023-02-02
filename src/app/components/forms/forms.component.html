@@ -39,6 +39,17 @@
         <input type="checkbox" name="rect" ngModel />
       </label>
     </div>
+
+    <div class="aula">
+      SELECT
+      <select name="lanches" ngModel>
+        <option value="">Selecione um lanche</option>
+        <!-- <option *ngFor="let item of listLanches" [value]="item.lanche"> -->
+        <option *ngFor="let item of listLanches" [ngValue]="item">
+          {{ item.lanche }} - {{ item.preco }}
+        </option>
+      </select>
+    </div>
   </form>
 
   {{ formulario.value | json }}

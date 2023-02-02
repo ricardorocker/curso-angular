@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class FormsComponent {
 
+  public listLanches: Array<{lanche: string, preco: string}> = [
+    { lanche: "X-Salada", preco: "R$10,00" },
+    { lanche: "X-Bacon", preco: "R$12,00" },
+    { lanche: "Coxinha", preco: "R$8,00" }
+  ]
+
 }
