@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
+import { FormsComponent } from './components/forms/forms.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'list/:id', component: ItemDetailComponent },
   { path: 'pipes', component: PipesComponent },
   { path: 'two-way-binding', component: TwoWayBindingComponent },
+  { path: 'forms', component: FormsComponent },
 ]
 
 @NgModule({
