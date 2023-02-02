@@ -4,8 +4,24 @@
       TEXT
       <label>
         Nome:
-        <input type="text" name="nome" ngModel />
+        <input
+          type="text"
+          name="nome"
+          #nome="ngModel"
+          [ngModel]="nome.value"
+          required
+        />
+        <span *ngIf="nome.invalid && (nome.dirty && nome.touched)">
+          Invalido!
+        </span>
       </label>
+    </div>
+
+    <div class="aula">
+      <div class="errors">FORM.VALID: {{ formulario.valid }}</div>
+      <div class="errors">NOME.VALID: {{ nome.valid }}</div>
+      <div class="errors">NOME.DIRTY: {{ nome.dirty }}</div>
+      <div class="errors">NOME.TOUCHED: {{ nome.touched }}</div>
     </div>
 
     <div class="aula">

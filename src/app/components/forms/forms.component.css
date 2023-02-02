@@ -18,3 +18,8 @@ input {
 select {
   padding: 10px;
 }
+
+
+.errors {
+  padding: 2px;
+}
