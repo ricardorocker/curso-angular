@@ -1,27 +1,45 @@
 <div class="class">
-
   <form #formulario="ngForm">
+    <div class="aula">
+      TEXT
+      <label>
+        Nome:
+        <input type="text" name="nome" ngModel />
+      </label>
+    </div>
 
-    <label>
-      Nome:
-      <input type="text" name="nome" ngModel />
-    </label>
+    <div class="aula">
+      RADIO
+      <label>
+        Masculino:
+        <input type="radio" name="sexo" value="Masculino" ngModel />
+      </label>
+      <label>
+        Feminino:
+        <input type="radio" name="sexo" value="Feminino" ngModel />
+      </label>
+      <label>
+        Outros:
+        <input type="radio" name="sexo" value="Outros" ngModel />
+      </label>
+    </div>
 
-    <label>
-      Masculino:
-      <input type="radio" name="sexo" value="Masculino" ngModel />
-    </label>
-    <label>
-      Feminino:
-      <input type="radio" name="sexo" value="Feminino" ngModel />
-    </label>
-    <label>
-      Outros:
-      <input type="radio" name="sexo" value="Outros" ngModel />
-    </label>
-
+    <div class="aula">
+      CHECKBOX
+      <label>
+        Angular:
+        <input type="checkbox" name="angular" ngModel />
+      </label>
+      <label>
+        Vue:
+        <input type="checkbox" name="vue" ngModel />
+      </label>
+      <label>
+        React:
+        <input type="checkbox" name="rect" ngModel />
+      </label>
+    </div>
   </form>
 
   {{ formulario.value | json }}
-
 </div>

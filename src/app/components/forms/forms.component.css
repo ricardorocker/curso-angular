@@ -1,8 +1,12 @@
 label {
   display: flex;
-  padding: 10px;
+  padding-top: 5px;
 }
 
 form {
   padding-bottom: 20px;
+}
+
+.aula {
+  padding: 10px;
 }
