@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 
+import { FormsComponent } from './components/forms/forms.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './components/first-component/first-component.component';
@@ -30,7 +31,8 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     ListRenderComponent,
     PipesComponent,
     TwoWayBindingComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,

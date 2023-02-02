@@ -1,0 +1,12 @@
+<div class="class">
+
+  <form #formulario="ngForm">
+    <label>
+      Nome:
+      <input type="text" name="nome" ngModel />
+    </label>
+  </form>
+
+  {{ formulario.value | json }}
+
+</div>
