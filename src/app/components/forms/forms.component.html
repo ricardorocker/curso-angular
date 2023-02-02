@@ -1,9 +1,9 @@
 <div class="class">
-  <form #formulario="ngForm">
+  <form #formulario="ngForm" (ngSubmit)="submitForm(formulario)">
     <div class="aula">
       TEXT
       <label>
-        Nome:
+        Nome*:
         <input
           type="text"
           name="nome"
@@ -66,6 +66,8 @@
         </option>
       </select>
     </div>
+
+    <button [disabled]="formulario.invalid">Enviar Dados</button>
   </form>
 
   {{ formulario.value | json }}
